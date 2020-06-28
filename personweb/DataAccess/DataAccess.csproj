@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45CD75C2-0BFE-4DAB-ACB1-9F6D380C0B18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Department.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EduField.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EduLevel.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EduTendency.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailContact.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailType.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonsAdmin.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonWebModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonWebModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonWebModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonWebModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonWebModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\EduFieldsRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\DepartmentsRepository.cs" />
+    <Compile Include="Repository\EduLevelsRepository.cs" />
+    <Compile Include="Repository\EmailContactsRepository.cs" />
+    <Compile Include="Repository\EmailTypesRepository.cs" />
+    <Compile Include="Repository\FacultiesRepositpry.cs" />
+    <Compile Include="Repository\PersonsAdminsRepository.cs" />
+    <Compile Include="Repository\RolesRepository.cs" />
+    <Compile Include="Repository\TelContactsRepository.cs" />
+    <Compile Include="Repository\TelTypesRepository.cs" />
+    <Compile Include="Repository\VEduTendenciesRepository.cs" />
+    <Compile Include="Repository\VEmployeesRepository.cs" />
+    <Compile Include="Repository\VLecturersRepository.cs" />
+    <Compile Include="Repository\VPNsRepository.cs" />
+    <Compile Include="Repository\VStudentsRepository.cs" />
+    <Compile Include="Repository\WebServiceAccountsRepository.cs" />
+    <Compile Include="Role.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TelContact.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TelType.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEduTendency.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEmailContact.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEmployee.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VLecturer.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VPN.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VStudent.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VTelContact.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VVPN.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceAccount.cs">
+      <DependentUpon>PersonWebModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="PersonWebModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PersonWebModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PersonWebModel.edmx.diagram">
+      <DependentUpon>PersonWebModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{339837cd-84b5-4720-a678-4259c52eb432}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PersonWebModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PersonWebModel.edmx</DependentUpon>
+      <LastGenOutput>PersonWebModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PersonWebModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PersonWebModel.edmx</DependentUpon>
+      <LastGenOutput>PersonWebModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

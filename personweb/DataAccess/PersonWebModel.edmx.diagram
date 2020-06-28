@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36d1e2a9eaa24cf3ae3822b11eab1d71" Name="Diagram1">
+        <EntityTypeShape EntityType="PersonsDBModel.Department" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.EduField" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.EduLevel" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.EduTendency" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.EmailContact" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.EmailType" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.Employee" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.Faculty" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.Lecturer" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.PersonsAdmin" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.Role" Width="1.5" PointX="6.75" PointY="5.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.Student" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.TelContact" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.TelType" Width="1.5" PointX="4.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VPN" Width="1.5" PointX="6.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.WebServiceAccount" Width="1.5" PointX="8.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VEduTendency" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VEmailContact" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VEmployee" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VLecturer" Width="1.5" PointX="0.75" PointY="11.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VStudent" Width="1.5" PointX="10.75" PointY="11.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VTelContact" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PersonsDBModel.VVPN" Width="1.5" PointX="2.75" PointY="12.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

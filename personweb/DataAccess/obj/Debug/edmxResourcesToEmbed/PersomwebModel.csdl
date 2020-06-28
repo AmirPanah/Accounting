@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PersonsDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PersonsDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Departments" EntityType="PersonsDBModel.Department" />
+    <EntitySet Name="EduFields" EntityType="PersonsDBModel.EduField" />
+    <EntitySet Name="EduLevels" EntityType="PersonsDBModel.EduLevel" />
+    <EntitySet Name="EduTendencies" EntityType="PersonsDBModel.EduTendency" />
+    <EntitySet Name="Emloyees" EntityType="PersonsDBModel.Emloyee" />
+    <EntitySet Name="Faculties" EntityType="PersonsDBModel.Faculty" />
+    <EntitySet Name="Lecturers" EntityType="PersonsDBModel.Lecturer" />
+    <EntitySet Name="PersonsAdmins" EntityType="PersonsDBModel.PersonsAdmin" />
+    <EntitySet Name="Roles" EntityType="PersonsDBModel.Role" />
+    <EntitySet Name="Students" EntityType="PersonsDBModel.Student" />
+    <EntitySet Name="VEduTendencies" EntityType="PersonsDBModel.VEduTendency" />
+    <EntitySet Name="VEmployees" EntityType="PersonsDBModel.VEmployee" />
+    <EntitySet Name="VLecturers" EntityType="PersonsDBModel.VLecturer" />
+    <EntitySet Name="VStudents" EntityType="PersonsDBModel.VStudent" />
+  </EntityContainer>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Type="Int32" Name="DepartmentID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DepartmentTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EduField">
+    <Key>
+      <PropertyRef Name="FieldID" />
+    </Key>
+    <Property Type="Int32" Name="FieldID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FieldTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EduLevel">
+    <Key>
+      <PropertyRef Name="LevelID" />
+    </Key>
+    <Property Type="Int32" Name="LevelID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="LevelTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EduTendency">
+    <Key>
+      <PropertyRef Name="TendencyID" />
+    </Key>
+    <Property Type="Int32" Name="TendencyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="FieldID" />
+    <Property Type="String" Name="TendencyTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Emloyee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DepartmentID" />
+    <Property Type="Int32" Name="RoleID" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Gender" />
+    <Property Type="String" Name="NationalCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageFileName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FixTel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Mobile" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Status" />
+  </EntityType>
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="FacultyID" />
+    </Key>
+    <Property Type="Int32" Name="FacultyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FacultyTitle" MaxLength="60" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Lecturer">
+    <Key>
+      <PropertyRef Name="LecturerID" />
+    </Key>
+    <Property Type="Int32" Name="LecturerID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Gender" />
+    <Property Type="String" Name="NationalCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageFileName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FixTel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Mobile" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FacultyID" />
+    <Property Type="Int32" Name="FieldID" />
+    <Property Type="Int32" Name="TendencyID" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Status" />
+  </EntityType>
+  <EntityType Name="PersonsAdmin">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Type="Int32" Name="AdminID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Status" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="Int32" Name="RoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Type="Int32" Name="StudentID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StudentCode" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Gender" />
+    <Property Type="String" Name="NationalCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageFileName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FixTel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Mobile" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FacultyID" />
+    <Property Type="Int32" Name="LevelID" />
+    <Property Type="Int32" Name="FieldID" />
+    <Property Type="Int32" Name="TendencyID" />
+    <Property Type="Int32" Name="EntryTerm" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Status" />
+  </EntityType>
+  <EntityType Name="VEduTendency">
+    <Key>
+      <PropertyRef Name="TendencyID" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Type="Int32" Name="TendencyID" Nullable="false" />
+    <Property Type="Int32" Name="FieldID" />
+    <Property Type="String" Name="TendencyTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Expr1" Nullable="false" />
+    <Property Type="String" Name="FieldTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VEmployee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeID" Nullable="false" />
+    <Property Type="Int32" Name="DepartmentID" />
+    <Property Type="Int32" Name="RoleID" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Gender" />
+    <Property Type="String" Name="NationalCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageFileName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FixTel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Mobile" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="String" Name="DepartmentTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VLecturer">
+    <Key>
+      <PropertyRef Name="LecturerID" />
+    </Key>
+    <Property Type="Int32" Name="LecturerID" Nullable="false" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Gender" />
+    <Property Type="String" Name="NationalCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageFileName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FixTel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Mobile" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FacultyID" />
+    <Property Type="Int32" Name="FieldID" />
+    <Property Type="Int32" Name="TendencyID" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="String" Name="FacultyTitle" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FieldTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TendencyTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VStudent">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Type="Int32" Name="StudentID" Nullable="false" />
+    <Property Type="String" Name="StudentCode" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Gender" />
+    <Property Type="String" Name="NationalCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageFileName" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FixTel" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Mobile" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FacultyID" />
+    <Property Type="Int32" Name="LevelID" />
+    <Property Type="Int32" Name="FieldID" />
+    <Property Type="Int32" Name="TendencyID" />
+    <Property Type="Int32" Name="EntryTerm" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="String" Name="FacultyTitle" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LevelTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FieldTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TendencyTitle" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

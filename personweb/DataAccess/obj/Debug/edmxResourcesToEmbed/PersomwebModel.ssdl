@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PersonsDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="PersonsDBModelStoreContainer">
+    <EntitySet Name="Departments" EntityType="PersonsDBModel.Store.Departments" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="EduFields" EntityType="PersonsDBModel.Store.EduFields" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="EduLevels" EntityType="PersonsDBModel.Store.EduLevels" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="EduTendencies" EntityType="PersonsDBModel.Store.EduTendencies" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="Emloyees" EntityType="PersonsDBModel.Store.Emloyees" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="Faculties" EntityType="PersonsDBModel.Store.Faculties" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="Lecturers" EntityType="PersonsDBModel.Store.Lecturers" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="PersonsAdmins" EntityType="PersonsDBModel.Store.PersonsAdmins" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="Roles" EntityType="PersonsDBModel.Store.Roles" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="Students" EntityType="PersonsDBModel.Store.Students" store:Type="Tables" Schema="HR" />
+    <EntitySet Name="VEduTendencies" EntityType="PersonsDBModel.Store.VEduTendencies" store:Type="Views" store:Schema="dbo" store:Name="VEduTendencies">
+      <DefiningQuery>SELECT 
+      [VEduTendencies].[TendencyID] AS [TendencyID], 
+      [VEduTendencies].[FieldID] AS [FieldID], 
+      [VEduTendencies].[TendencyTitle] AS [TendencyTitle], 
+      [VEduTendencies].[Expr1] AS [Expr1], 
+      [VEduTendencies].[FieldTitle] AS [FieldTitle]
+      FROM [dbo].[VEduTendencies] AS [VEduTendencies]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VEmployees" EntityType="PersonsDBModel.Store.VEmployees" store:Type="Views" store:Schema="dbo" store:Name="VEmployees">
+      <DefiningQuery>SELECT 
+      [VEmployees].[EmployeeID] AS [EmployeeID], 
+      [VEmployees].[DepartmentID] AS [DepartmentID], 
+      [VEmployees].[RoleID] AS [RoleID], 
+      [VEmployees].[FirstName] AS [FirstName], 
+      [VEmployees].[LastName] AS [LastName], 
+      [VEmployees].[Gender] AS [Gender], 
+      [VEmployees].[NationalCode] AS [NationalCode], 
+      [VEmployees].[ImageFileName] AS [ImageFileName], 
+      [VEmployees].[FixTel] AS [FixTel], 
+      [VEmployees].[Mobile] AS [Mobile], 
+      [VEmployees].[Email] AS [Email], 
+      [VEmployees].[Username] AS [Username], 
+      [VEmployees].[Password] AS [Password], 
+      [VEmployees].[Status] AS [Status], 
+      [VEmployees].[DepartmentTitle] AS [DepartmentTitle], 
+      [VEmployees].[RoleTitle] AS [RoleTitle]
+      FROM [dbo].[VEmployees] AS [VEmployees]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VLecturers" EntityType="PersonsDBModel.Store.VLecturers" store:Type="Views" store:Schema="dbo" store:Name="VLecturers">
+      <DefiningQuery>SELECT 
+      [VLecturers].[LecturerID] AS [LecturerID], 
+      [VLecturers].[FirstName] AS [FirstName], 
+      [VLecturers].[LastName] AS [LastName], 
+      [VLecturers].[Gender] AS [Gender], 
+      [VLecturers].[NationalCode] AS [NationalCode], 
+      [VLecturers].[ImageFileName] AS [ImageFileName], 
+      [VLecturers].[FixTel] AS [FixTel], 
+      [VLecturers].[Mobile] AS [Mobile], 
+      [VLecturers].[Email] AS [Email], 
+      [VLecturers].[FacultyID] AS [FacultyID], 
+      [VLecturers].[FieldID] AS [FieldID], 
+      [VLecturers].[TendencyID] AS [TendencyID], 
+      [VLecturers].[Username] AS [Username], 
+      [VLecturers].[Password] AS [Password], 
+      [VLecturers].[Status] AS [Status], 
+      [VLecturers].[FacultyTitle] AS [FacultyTitle], 
+      [VLecturers].[FieldTitle] AS [FieldTitle], 
+      [VLecturers].[TendencyTitle] AS [TendencyTitle]
+      FROM [dbo].[VLecturers] AS [VLecturers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VStudents" EntityType="PersonsDBModel.Store.VStudents" store:Type="Views" store:Schema="dbo" store:Name="VStudents">
+      <DefiningQuery>SELECT 
+      [VStudents].[StudentID] AS [StudentID], 
+      [VStudents].[StudentCode] AS [StudentCode], 
+      [VStudents].[FirstName] AS [FirstName], 
+      [VStudents].[LastName] AS [LastName], 
+      [VStudents].[Gender] AS [Gender], 
+      [VStudents].[NationalCode] AS [NationalCode], 
+      [VStudents].[ImageFileName] AS [ImageFileName], 
+      [VStudents].[FixTel] AS [FixTel], 
+      [VStudents].[Mobile] AS [Mobile], 
+      [VStudents].[Email] AS [Email], 
+      [VStudents].[FacultyID] AS [FacultyID], 
+      [VStudents].[LevelID] AS [LevelID], 
+      [VStudents].[FieldID] AS [FieldID], 
+      [VStudents].[TendencyID] AS [TendencyID], 
+      [VStudents].[EntryTerm] AS [EntryTerm], 
+      [VStudents].[Username] AS [Username], 
+      [VStudents].[Password] AS [Password], 
+      [VStudents].[Status] AS [Status], 
+      [VStudents].[FacultyTitle] AS [FacultyTitle], 
+      [VStudents].[LevelTitle] AS [LevelTitle], 
+      [VStudents].[FieldTitle] AS [FieldTitle], 
+      [VStudents].[TendencyTitle] AS [TendencyTitle]
+      FROM [dbo].[VStudents] AS [VStudents]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EduFields">
+    <Key>
+      <PropertyRef Name="FieldID" />
+    </Key>
+    <Property Name="FieldID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FieldTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EduLevels">
+    <Key>
+      <PropertyRef Name="LevelID" />
+    </Key>
+    <Property Name="LevelID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LevelTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EduTendencies">
+    <Key>
+      <PropertyRef Name="TendencyID" />
+    </Key>
+    <Property Name="TendencyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="TendencyTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Emloyees">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentID" Type="int" />
+    <Property Name="RoleID" Type="int" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="NationalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ImageFileName" Type="nvarchar" MaxLength="150" />
+    <Property Name="FixTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="11" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="Faculties">
+    <Key>
+      <PropertyRef Name="FacultyID" />
+    </Key>
+    <Property Name="FacultyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FacultyTitle" Type="nvarchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="Lecturers">
+    <Key>
+      <PropertyRef Name="LecturerID" />
+    </Key>
+    <Property Name="LecturerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="NationalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ImageFileName" Type="nvarchar" MaxLength="150" />
+    <Property Name="FixTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="11" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="FacultyID" Type="int" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="TendencyID" Type="int" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="PersonsAdmins">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StudentCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="NationalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ImageFileName" Type="nvarchar" MaxLength="150" />
+    <Property Name="FixTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="11" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="FacultyID" Type="int" />
+    <Property Name="LevelID" Type="int" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="TendencyID" Type="int" />
+    <Property Name="EntryTerm" Type="int" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PersonsDB.dbo.VEduTendencies' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VEduTendencies">
+    <Key>
+      <PropertyRef Name="TendencyID" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="TendencyID" Type="int" Nullable="false" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="TendencyTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr1" Type="int" Nullable="false" />
+    <Property Name="FieldTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PersonsDB.dbo.VEmployees' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VEmployees">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" />
+    <Property Name="RoleID" Type="int" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="NationalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ImageFileName" Type="nvarchar" MaxLength="150" />
+    <Property Name="FixTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="11" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+    <Property Name="DepartmentTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoleTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PersonsDB.dbo.VLecturers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VLecturers">
+    <Key>
+      <PropertyRef Name="LecturerID" />
+    </Key>
+    <Property Name="LecturerID" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="NationalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ImageFileName" Type="nvarchar" MaxLength="150" />
+    <Property Name="FixTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="11" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="FacultyID" Type="int" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="TendencyID" Type="int" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+    <Property Name="FacultyTitle" Type="nvarchar" MaxLength="60" />
+    <Property Name="FieldTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="TendencyTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PersonsDB.dbo.VStudents' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VStudents">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="StudentCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="NationalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ImageFileName" Type="nvarchar" MaxLength="150" />
+    <Property Name="FixTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="11" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="FacultyID" Type="int" />
+    <Property Name="LevelID" Type="int" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="TendencyID" Type="int" />
+    <Property Name="EntryTerm" Type="int" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+    <Property Name="FacultyTitle" Type="nvarchar" MaxLength="60" />
+    <Property Name="LevelTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="FieldTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="TendencyTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>

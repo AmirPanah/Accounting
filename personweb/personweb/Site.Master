@@ -1,0 +1,520 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="personweb.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%= Resources.DashboardText.Controlpanel %> | <%= Resources.DashboardText.company %>  %></title>
+ <%-- //  <link href="Style/Dashboard.css" rel="stylesheet" />--%>
+    <link href="Style/Dashboard.css" rel="stylesheet" />
+</head>
+    <body>
+        <div>
+    
+        <form id="form1" runat="server" enctype="multipart/form-data" method="post">
+         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        
+        <table style="border: 1px groove #000099; width:1050px; margin-left:auto;margin-right:auto " >
+            <tr  class="siteheader">
+                <td  class="siteheader">
+                   
+        <%--<div id="headerDiv" class="header">--%>
+            <div id="armDiv" class="armDiv">
+                <asp:Label ID="Label1" runat="server" Text="<%$ Resources:DashboardText,company %>" CssClass="font_custom36"></asp:Label>
+            </div>
+            <%--<div id="accountDiv" class="accountDiv">--%>
+                <%--<asp:Label ID="lblWelcome" runat="server" Text="" ForeColor="White" Font-Names="tahoma" Font-Size="10pt"></asp:Label>--%>
+            <%--</div>--%>
+            
+        <%--</div>--%>
+                </td>
+            </tr>
+
+           
+
+              <tr>
+                <td class="align">
+                    <div id="rightnavigation">
+            <table >
+                <tr>
+                    <td class="align">
+                        
+                         <asp:Panel ID="panelMenu" runat="server" Width="201px">
+                                <table style="width:201px; border-collapse: collapse;">
+                                    <tr>
+                                        <td>
+                                            <ajaxToolkit:Accordion ID="MyAccordion" runat="server"
+                                                HeaderCssClass="accordionHeader"
+                                                HeaderSelectedCssClass="accordionHeader"
+                                                ContentCssClass="accordionContent"
+                                                FadeTransitions="false"
+                                                FramesPerSecond="40"
+                                                TransitionDuration="201"
+                                                AutoSize="None"
+                                                RequireOpenedPane="false"
+                                                SuppressHeaderPostbacks="true" Width="200px">
+                                                <Panes>
+                                                    <ajaxToolkit:AccordionPane ID="AccordionPane1" runat="server">
+                                                        <Header>
+                                                            <asp:LinkButton ID="linkUsersInfo" runat="server"
+                                                                CausesValidation="false"
+                                                                CssClass="UserProfileMenuItem"
+                                                                Text="<%$ Resources:DashboardText,Tools %>" >
+                                                            </asp:LinkButton>
+                                                        </Header>
+                                                        <Content>
+                                                            <asp:Panel ID="menuUsersInfo" runat="server" CssClass="menuAccordionHeader">
+                                                                <table class="menuAccordionContentTable">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image1" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/house.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="linkItem1" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,Faculties %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/FacultiesManager" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                     <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image2" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/bullet-orange.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink1" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,EduLevelManagment %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/EduLevelsManager" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                    
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image3" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/bullet-orange.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink2" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,EduFieldManagment %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/EduFieldsManager" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image4" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/bullet-orange.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink3" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,EduTendencyManagment %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/EduTendenciesManagment" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image8" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/bullet-orange.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink7" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,DepartmentManagment %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/DepartmentsManager"></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image9" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/role.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink8" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,RoleManagment %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/RolesManagment"></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                 <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image14" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/horizontal.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink13" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,WebServiceAccountManagment %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl= "~/WebServiceManagement" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                     <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image15" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/process.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink14" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,Menuadmins %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl=  "~/PersonsAdminsManagment" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </asp:Panel>
+                                                        </Content>
+
+
+                                                    </ajaxToolkit:AccordionPane>
+
+                                                                            
+                                                   
+                                                    <ajaxToolkit:AccordionPane ID="AccordionPane5" runat="server">
+                                                        <Header>
+                                                            <asp:LinkButton ID="LinkButton4" runat="server"
+                                                                CausesValidation="false"
+                                                                CssClass="UserProfileMenuItem"
+                                                                Text="<%$ Resources:DashboardText,Person %>"  >
+                                                            </asp:LinkButton>
+                                                        </Header>
+                                                        <Content>
+                                                            <asp:Panel ID="Panel4" runat="server" CssClass="menuAccordionHeader">
+                                                                <table class="menuAccordionContentTable">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image5" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/current-user.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink4" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,Students %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/StudentsManagment" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image6" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/current-user.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink5" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,Lecturers %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl= "~/LecturersManagment"></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                         <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image7" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/current-user.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink6" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,Employees %>" 
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl= "~/EmployeesManagment"></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                </table>
+                                                            </asp:Panel>
+                                                        </Content>
+                                                    </ajaxToolkit:AccordionPane>
+
+                                                      <ajaxToolkit:AccordionPane ID="AccordionPane8" runat="server">
+                                                        <Header>
+                                                            <asp:LinkButton ID="LinkButton7" runat="server"
+                                                                CausesValidation="false"
+                                                                CssClass="UserProfileMenuItem"
+                                                                Text="<%$ Resources:DashboardText,Email %>"  >
+                                                            </asp:LinkButton>
+                                                        </Header>
+                                                        <Content>
+                                                            <asp:Panel ID="Panel7" runat="server" CssClass="menuAccordionHeader">
+                                                                <table class="menuAccordionContentTable">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image10" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/unread-message.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink9" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,EmailTypeManagment %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/EmailTypesManagment" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image11" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/unread-message.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink10" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,EmailPerson %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl= "~/EmailContactsManagment"></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </table>
+                                                            </asp:Panel>
+                                                        </Content>
+                                                    </ajaxToolkit:AccordionPane>
+
+                                                     <ajaxToolkit:AccordionPane ID="AccordionPane9" runat="server">
+                                                        <Header>
+                                                            <asp:LinkButton ID="LinkButton8" runat="server"
+                                                                CausesValidation="false"
+                                                                CssClass="UserProfileMenuItem"
+                                                                Text="<%$ Resources:DashboardText,Tel %>"  >
+                                                            </asp:LinkButton>
+                                                        </Header>
+                                                        <Content>
+                                                            <asp:Panel ID="Panel8" runat="server" CssClass="menuAccordionHeader">
+                                                                <table class="menuAccordionContentTable">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image12" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/tel.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink11" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,TelType %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl="~/TelTypesManagment" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image13" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/tel.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink12" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,TelPerson %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl= "~/TelContactsManagment"></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </table>
+                                                            </asp:Panel>
+                                                        </Content>
+                                                    </ajaxToolkit:AccordionPane>
+
+                                                   
+                                                  
+
+
+                                                     
+                                                     <ajaxToolkit:AccordionPane ID="AccordionPane2" runat="server">
+                                                        <Header>
+                                                          
+                                                            <asp:LinkButton ID="LinkButton1" runat="server"
+                                                                CausesValidation="false"
+                                                                CssClass="UserProfileMenuItem"
+                                                                Text="<%$ Resources:DashboardText,vpn %>"  >
+                                                            </asp:LinkButton>
+                                                        </Header>
+                                                        <Content>
+                                                            <asp:Panel ID="Panel1" runat="server" CssClass="menuAccordionHeader">
+                                                                <table class="menuAccordionContentTable">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image17" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/search-student.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink16" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,vpn %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl=  "~/VPNsManagment" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                 
+                                                                </table>
+                                                            </asp:Panel>
+                                                        </Content>
+                                                    </ajaxToolkit:AccordionPane>
+
+                                                   
+
+
+
+
+
+
+                                                    
+                                                     <ajaxToolkit:AccordionPane ID="AccordionPane12" runat="server">
+                                                        <Header>
+                                                          
+                                                            <asp:LinkButton ID="LinkButton11" runat="server"
+                                                                CausesValidation="false"
+                                                                CssClass="UserProfileMenuItem"
+                                                                Text="<%$ Resources:DashboardText,LogOut %>"  >
+                                                            </asp:LinkButton>
+                                                        </Header>
+                                                        <Content>
+                                                            <asp:Panel ID="Panel11" runat="server" CssClass="menuAccordionHeader">
+                                                                <table class="menuAccordionContentTable">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:Image ID="Image16" runat="server"
+                                                                                CssClass="dashboardMenuItemBullet"
+                                                                                ImageUrl="~/Images/logout.png"
+                                                                                Height="16px"
+                                                                                Width="16px" />
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <asp:HyperLink ID="HyperLink15" runat="server"
+                                                                                Font-Size="9pt"
+                                                                                Text="<%$ Resources:DashboardText,LogOut %>"
+                                                                                CssClass="dashboardMenuItem"
+                                                                                NavigateUrl=  "~/SystemLogin" ></asp:HyperLink>
+                                                                        </td>
+                                                                    </tr>
+                                                                 
+                                                                </table>
+                                                            </asp:Panel>
+                                                        </Content>
+                                                    </ajaxToolkit:AccordionPane>
+                                                </Panes>
+                                            </ajaxToolkit:Accordion>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </asp:Panel>
+                        
+                    </td>
+                </tr>
+                
+            </table  >
+        </div>
+
+        <div id="content">
+           
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+             
+        </div>
+                </td>
+            </tr>
+
+
+
+
+</table>
+
+
+
+           
+        <table style="width:950px;  margin-left:auto;margin-right:auto ">
+            <tr>
+                <td>
+            <div  class="footer">
+        </div>
+            </td>    
+       </tr>
+    </table>
+
+        
+
+
+    
+        
+   
+        
+    </form>
+          
+</body>
+</html>

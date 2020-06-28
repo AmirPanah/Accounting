@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C37355FD-C530-42CD-A5A7-B11A3A8263CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>personweb</RootNamespace>
+    <AssemblyName>personweb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.15.1.3.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\..\master-data\New folder\EXCEL_Modal\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddDepartments.aspx" />
+    <Content Include="AddEduFields.aspx" />
+    <Content Include="AddEduLevels.aspx" />
+    <Content Include="AddEduTendencies.aspx" />
+    <Content Include="AddEmail.aspx" />
+    <Content Include="AddEmailContacts.aspx" />
+    <Content Include="AddEmailTypes.aspx" />
+    <Content Include="AddEmployees.aspx" />
+    <Content Include="AddFaculties.aspx" />
+    <Content Include="AddLecturers.aspx" />
+    <Content Include="AddPersonsAdmins.aspx" />
+    <Content Include="AddRoles.aspx" />
+    <Content Include="AddStudents.aspx" />
+    <Content Include="AddTel.aspx" />
+    <Content Include="AddTelContacts.aspx" />
+    <Content Include="AddTelTypes.aspx" />
+    <Content Include="AddVPNs.aspx" />
+    <Content Include="AddWebServiceAccount.aspx" />
+    <Content Include="DepartmentsManager.aspx" />
+    <Content Include="DepartmentsUpdate.aspx" />
+    <Content Include="EduFieldsManager.aspx" />
+    <Content Include="EduFieldsUpdate.aspx" />
+    <Content Include="EduLevelsManager.aspx" />
+    <Content Include="EduLevelsUpdate.aspx" />
+    <Content Include="EduTendenciesManagment.aspx" />
+    <Content Include="EduTendenciesUpdate.aspx" />
+    <Content Include="EmailContactsManagment.aspx" />
+    <Content Include="EmailContactsUpdate.aspx" />
+    <Content Include="EmailManagment.aspx" />
+    <Content Include="EmailTypesManagment.aspx" />
+    <Content Include="EmailTypesUpdate.aspx" />
+    <Content Include="EmailUpdate.aspx" />
+    <Content Include="EmployeesManagment.aspx" />
+    <Content Include="EmployeesUpdate.aspx" />
+    <Content Include="employee\Add.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="FacultiesManager.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Icons\add.png" />
+    <Content Include="Icons\add2.png" />
+    <Content Include="Icons\add4.jpg" />
+    <Content Include="Icons\added.jpg" />
+    <Content Include="Icons\deleteicon.png" />
+    <Content Include="Icons\EditIcon.png" />
+    <Content Include="Icons\EditIcon2.png" />
+    <Content Include="Icons\email1.jpg" />
+    <Content Include="Icons\email2.png" />
+    <Content Include="Icons\Left-arrow.png" />
+    <Content Include="Icons\search.png" />
+    <Content Include="Icons\selecticon.png" />
+    <Content Include="Icons\tel.jpg" />
+    <Content Include="Images\add-user.png" />
+    <Content Include="Images\AddFile.png" />
+    <Content Include="Images\archive.png" />
+    <Content Include="Images\attachement.png" />
+    <Content Include="Images\available.png" />
+    <Content Include="Images\bullet-orange.png" />
+    <Content Include="Images\call.png" />
+    <Content Include="Images\car.png" />
+    <Content Include="Images\card.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\collapse.png" />
+    <Content Include="Images\collapse_blue.jpg" />
+    <Content Include="Images\crm-logo.jpg" />
+    <Content Include="Images\crm_logo.jpg" />
+    <Content Include="Images\crm_logo.png" />
+    <Content Include="Images\current-user.png" />
+    <Content Include="Images\datetime.png" />
+    <Content Include="Images\down-arrow.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\employee-reply.png" />
+    <Content Include="Images\expand.png" />
+    <Content Include="Images\expand_blue.jpg" />
+    <Content Include="Images\finished.png" />
+    <Content Include="Images\form.png" />
+    <Content Include="Images\go-left.png" />
+    <Content Include="Images\go-right.png" />
+    <Content Include="Images\holidays.png" />
+    <Content Include="Images\horizontal.png" />
+    <Content Include="Images\house.png" />
+    <Content Include="Images\inprogress.png" />
+    <Content Include="Images\items.png" />
+    <Content Include="Images\left-arrow.png" />
+    <Content Include="Images\like.png" />
+    <Content Include="Images\link.png" />
+    <Content Include="Images\Lock.png" />
+    <Content Include="Images\logout.png" />
+    <Content Include="Images\mail_receive.png" />
+    <Content Include="Images\mail_send.png" />
+    <Content Include="Images\Mazums-Logo.png" />
+    <Content Include="Images\MessageBox.png" />
+    <Content Include="Images\mission-managers.png" />
+    <Content Include="Images\mission-types.png" />
+    <Content Include="Images\missions.png" />
+    <Content Include="Images\more.png" />
+    <Content Include="Images\part.png" />
+    <Content Include="Images\participated.png" />
+    <Content Include="Images\portal-logo.jpg" />
+    <Content Include="Images\process.png" />
+    <Content Include="Images\question-list.png" />
+    <Content Include="Images\readed-message.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\role.png" />
+    <Content Include="Images\savable.png" />
+    <Content Include="Images\save-purple.png" />
+    <Content Include="Images\search-student.png" />
+    <Content Include="Images\shift-group.png" />
+    <Content Include="Images\shift-individual.png" />
+    <Content Include="Images\shift.png" />
+    <Content Include="Images\statistics.png" />
+    <Content Include="Images\student-reply.png" />
+    <Content Include="Images\students.png" />
+    <Content Include="Images\tel.png" />
+    <Content Include="Images\telllll.png" />
+    <Content Include="Images\Timex.jpg" />
+    <Content Include="Images\types.png" />
+    <Content Include="Images\unavailable.png" />
+    <Content Include="Images\university.jpg" />
+    <Content Include="Images\Unlock.png" />
+    <Content Include="Images\unread-message.png" />
+    <Content Include="Images\up-arrow.png" />
+    <Content Include="Images\uploading.gif" />
+    <Content Include="Images\uploading2.gif" />
+    <Content Include="Images\uploading3.gif" />
+    <Content Include="Images\uploading4.gif" />
+    <Content Include="Images\uploading5.gif" />
+    <Content Include="Images\users.png" />
+    <Content Include="Images\user_admin.png" />
+    <Content Include="Images\user_employee.png" />
+    <Content Include="Images\user_manager.png" />
+    <Content Include="Images\vacation-managers.png" />
+    <Content Include="Images\vacation-types.png" />
+    <Content Include="Images\vacations.png" />
+    <Content Include="Images\veehan-top-logo.jpg" />
+    <Content Include="Images\Veehan-White-Theme-Logo.jpg" />
+    <Content Include="Images\VeehanERST.jpg" />
+    <Content Include="Images\vertical.png" />
+    <Content Include="Images\Vote.jpg" />
+    <Content Include="Images\wait.png" />
+    <Content Include="Images\warning.png" />
+    <Content Include="LecturersManagment.aspx" />
+    <Content Include="LecturersUpdate.aspx" />
+    <Content Include="Managment.aspx" />
+    <Content Include="PersonsAdminsManagment.aspx" />
+    <Content Include="PersonsAdminsUpdate.aspx" />
+    <Content Include="PersonWebService.asmx" />
+    <Content Include="RolesManagment.aspx" />
+    <Content Include="RolesUpdate.aspx" />
+    <Content Include="GenerateCaptcha.ashx" />
+    <Content Include="GenerateCaptcha.ashx.cs~RFd0bd70.TMP" />
+    <Content Include="StudentsManagment.aspx" />
+    <Content Include="StudentsUpdate.aspx" />
+    <Content Include="Style\Dashboard.css" />
+    <Content Include="Style\StyleSheet1.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="TelContactsManagment.aspx" />
+    <Content Include="TelContactsUpdate.aspx" />
+    <Content Include="TelManagment.aspx" />
+    <Content Include="TelTypesManagment.aspx" />
+    <Content Include="TelTypesUpdate.aspx" />
+    <Content Include="TelUpdate.aspx" />
+    <Content Include="UpdateFaculties.aspx" />
+    <Content Include="VPNsManagment.aspx" />
+    <Content Include="VPNsUpdate.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebServiceAccountManagment.aspx" />
+    <Content Include="WebServiceAccountUpdate.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDepartments.aspx.cs">
+      <DependentUpon>AddDepartments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDepartments.aspx.designer.cs">
+      <DependentUpon>AddDepartments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEduFields.aspx.cs">
+      <DependentUpon>AddEduFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEduFields.aspx.designer.cs">
+      <DependentUpon>AddEduFields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEduLevels.aspx.cs">
+      <DependentUpon>AddEduLevels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEduLevels.aspx.designer.cs">
+      <DependentUpon>AddEduLevels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEduTendencies.aspx.cs">
+      <DependentUpon>AddEduTendencies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEduTendencies.aspx.designer.cs">
+      <DependentUpon>AddEduTendencies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmail.aspx.cs">
+      <DependentUpon>AddEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEmail.aspx.designer.cs">
+      <DependentUpon>AddEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmailContacts.aspx.cs">
+      <DependentUpon>AddEmailContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEmailContacts.aspx.designer.cs">
+      <DependentUpon>AddEmailContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmailTypes.aspx.cs">
+      <DependentUpon>AddEmailTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEmailTypes.aspx.designer.cs">
+      <DependentUpon>AddEmailTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployees.aspx.cs">
+      <DependentUpon>AddEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEmployees.aspx.designer.cs">
+      <DependentUpon>AddEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddFaculties.aspx.cs">
+      <DependentUpon>AddFaculties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddFaculties.aspx.designer.cs">
+      <DependentUpon>AddFaculties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddLecturers.aspx.cs">
+      <DependentUpon>AddLecturers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddLecturers.aspx.designer.cs">
+      <DependentUpon>AddLecturers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPersonsAdmins.aspx.cs">
+      <DependentUpon>AddPersonsAdmins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPersonsAdmins.aspx.designer.cs">
+      <DependentUpon>AddPersonsAdmins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoles.aspx.cs">
+      <DependentUpon>AddRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddRoles.aspx.designer.cs">
+      <DependentUpon>AddRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudents.aspx.cs">
+      <DependentUpon>AddStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStudents.aspx.designer.cs">
+      <DependentUpon>AddStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTel.aspx.cs">
+      <DependentUpon>AddTel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTel.aspx.designer.cs">
+      <DependentUpon>AddTel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTelContacts.aspx.cs">
+      <DependentUpon>AddTelContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTelContacts.aspx.designer.cs">
+      <DependentUpon>AddTelContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTelTypes.aspx.cs">
+      <DependentUpon>AddTelTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTelTypes.aspx.designer.cs">
+      <DependentUpon>AddTelTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVPNs.aspx.cs">
+      <DependentUpon>AddVPNs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVPNs.aspx.designer.cs">
+      <DependentUpon>AddVPNs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddWebServiceAccount.aspx.cs">
+      <DependentUpon>AddWebServiceAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddWebServiceAccount.aspx.designer.cs">
+      <DependentUpon>AddWebServiceAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DashboardText.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentsManager.aspx.cs">
+      <DependentUpon>DepartmentsManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentsManager.aspx.designer.cs">
+      <DependentUpon>DepartmentsManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentsUpdate.aspx.cs">
+      <DependentUpon>DepartmentsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentsUpdate.aspx.designer.cs">
+      <DependentUpon>DepartmentsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduFieldsManager.aspx.cs">
+      <DependentUpon>EduFieldsManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduFieldsManager.aspx.designer.cs">
+      <DependentUpon>EduFieldsManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduFieldsUpdate.aspx.cs">
+      <DependentUpon>EduFieldsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduFieldsUpdate.aspx.designer.cs">
+      <DependentUpon>EduFieldsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduLevelsManager.aspx.cs">
+      <DependentUpon>EduLevelsManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduLevelsManager.aspx.designer.cs">
+      <DependentUpon>EduLevelsManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduLevelsUpdate.aspx.cs">
+      <DependentUpon>EduLevelsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduLevelsUpdate.aspx.designer.cs">
+      <DependentUpon>EduLevelsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduTendenciesManagment.aspx.cs">
+      <DependentUpon>EduTendenciesManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduTendenciesManagment.aspx.designer.cs">
+      <DependentUpon>EduTendenciesManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EduTendenciesUpdate.aspx.cs">
+      <DependentUpon>EduTendenciesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EduTendenciesUpdate.aspx.designer.cs">
+      <DependentUpon>EduTendenciesUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailContactsManagment.aspx.cs">
+      <DependentUpon>EmailContactsManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailContactsManagment.aspx.designer.cs">
+      <DependentUpon>EmailContactsManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailContactsUpdate.aspx.cs">
+      <DependentUpon>EmailContactsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailContactsUpdate.aspx.designer.cs">
+      <DependentUpon>EmailContactsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailManagment.aspx.cs">
+      <DependentUpon>EmailManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailManagment.aspx.designer.cs">
+      <DependentUpon>EmailManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTypesManagment.aspx.cs">
+      <DependentUpon>EmailTypesManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailTypesManagment.aspx.designer.cs">
+      <DependentUpon>EmailTypesManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTypesUpdate.aspx.cs">
+      <DependentUpon>EmailTypesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailTypesUpdate.aspx.designer.cs">
+      <DependentUpon>EmailTypesUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailUpdate.aspx.cs">
+      <DependentUpon>EmailUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailUpdate.aspx.designer.cs">
+      <DependentUpon>EmailUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesManagment.aspx.cs">
+      <DependentUpon>EmployeesManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeesManagment.aspx.designer.cs">
+      <DependentUpon>EmployeesManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesUpdate.aspx.cs">
+      <DependentUpon>EmployeesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeesUpdate.aspx.designer.cs">
+      <DependentUpon>EmployeesUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="employee\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employee\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacultiesManager.aspx.cs">
+      <DependentUpon>FacultiesManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultiesManager.aspx.designer.cs">
+      <DependentUpon>FacultiesManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateCaptcha.ashx.cs">
+      <DependentUpon>GenerateCaptcha.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LecturersManagment.aspx.cs">
+      <DependentUpon>LecturersManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturersManagment.aspx.designer.cs">
+      <DependentUpon>LecturersManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LecturersUpdate.aspx.cs">
+      <DependentUpon>LecturersUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LecturersUpdate.aspx.designer.cs">
+      <DependentUpon>LecturersUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Managment.aspx.cs">
+      <DependentUpon>Managment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managment.aspx.designer.cs">
+      <DependentUpon>Managment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonsAdminsManagment.aspx.cs">
+      <DependentUpon>PersonsAdminsManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonsAdminsManagment.aspx.designer.cs">
+      <DependentUpon>PersonsAdminsManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonsAdminsUpdate.aspx.cs">
+      <DependentUpon>PersonsAdminsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonsAdminsUpdate.aspx.designer.cs">
+      <DependentUpon>PersonsAdminsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonWebService.asmx.cs">
+      <DependentUpon>PersonWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolesManagment.aspx.cs">
+      <DependentUpon>RolesManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolesManagment.aspx.designer.cs">
+      <DependentUpon>RolesManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RolesUpdate.aspx.cs">
+      <DependentUpon>RolesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolesUpdate.aspx.designer.cs">
+      <DependentUpon>RolesUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsManagment.aspx.cs">
+      <DependentUpon>StudentsManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentsManagment.aspx.designer.cs">
+      <DependentUpon>StudentsManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsUpdate.aspx.cs">
+      <DependentUpon>StudentsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentsUpdate.aspx.designer.cs">
+      <DependentUpon>StudentsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelContactsManagment.aspx.cs">
+      <DependentUpon>TelContactsManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelContactsManagment.aspx.designer.cs">
+      <DependentUpon>TelContactsManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelContactsUpdate.aspx.cs">
+      <DependentUpon>TelContactsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelContactsUpdate.aspx.designer.cs">
+      <DependentUpon>TelContactsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelManagment.aspx.cs">
+      <DependentUpon>TelManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelManagment.aspx.designer.cs">
+      <DependentUpon>TelManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelTypesManagment.aspx.cs">
+      <DependentUpon>TelTypesManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelTypesManagment.aspx.designer.cs">
+      <DependentUpon>TelTypesManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelTypesUpdate.aspx.cs">
+      <DependentUpon>TelTypesUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelTypesUpdate.aspx.designer.cs">
+      <DependentUpon>TelTypesUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TelUpdate.aspx.cs">
+      <DependentUpon>TelUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelUpdate.aspx.designer.cs">
+      <DependentUpon>TelUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFaculties.aspx.cs">
+      <DependentUpon>UpdateFaculties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateFaculties.aspx.designer.cs">
+      <DependentUpon>UpdateFaculties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VPNsManagment.aspx.cs">
+      <DependentUpon>VPNsManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VPNsManagment.aspx.designer.cs">
+      <DependentUpon>VPNsManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VPNsUpdate.aspx.cs">
+      <DependentUpon>VPNsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VPNsUpdate.aspx.designer.cs">
+      <DependentUpon>VPNsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceAccountManagment.aspx.cs">
+      <DependentUpon>WebServiceAccountManagment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebServiceAccountManagment.aspx.designer.cs">
+      <DependentUpon>WebServiceAccountManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceAccountUpdate.aspx.cs">
+      <DependentUpon>WebServiceAccountUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebServiceAccountUpdate.aspx.designer.cs">
+      <DependentUpon>WebServiceAccountUpdate.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{339837cd-84b5-4720-a678-4259c52eb432}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{45cd75c2-0bfe-4dab-acb1-9f6d380c0b18}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\DashboardText.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DashboardText.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="file\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1860/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,357 @@
+﻿body {
+    font-family: Tahoma;
+    font-size:9pt;
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+    color:#524e4e;
+}
+.font_custom36 {
+    font-family: Custom;
+    font-size:36px;
+    font-weight: normal;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #0d66a7;
+}
+.siteheader {
+     width: 950px;
+    height:90px;
+    background-color: #0d66a7
+}
+.lblfooter {
+   
+}
+.footer {
+    width: 1050px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #0d66a7;
+    color: white;
+    height: 30px;
+}
+#content {
+    top: 0px;
+    margin: 0px 203px 0 4px;
+    padding: 10px;
+    color: #000000;
+}
+
+#rightnavigation {
+    float: right;
+    background-color: #CCCCCC;
+    width: 203px;
+    direction: rtl;
+    margin-right: 0px;
+}
+
+.divrightnavigation {
+    float: right;
+    background-color: #E8E8E8;
+    width: 200px;
+    direction:rtl;
+}
+.mainContent
+{
+    float:right;
+    direction:rtl;
+    /*width:1000px;*/
+    margin-top:60px;
+    /*margin-right:210px;*/
+    display:inline-block;
+    /*border:1px solid #808080;*/
+}
+
+.logo
+{
+    float:right;
+    margin-top:4px;
+    margin-bottom:5px;
+    margin-right:5px;
+    /*width:150px;*/
+    height:53px;
+    /*background-color:#ff6a00;*/
+}
+
+.persianDate
+{
+    float:left;
+    margin-top:10px;
+    margin-left:5px;
+    color:white;
+}
+
+.PersianFullDate {
+    margin:5px;
+    float:left;
+    direction:rtl;
+    text-align:right;
+}
+.lblfooter {
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.verticalDelimiter
+{
+    height: 20px; 
+    width: 1px; 
+    margin-left: 3px; 
+    margin-right: 3px; 
+    background-color: #b6ff00;
+}
+
+.UserProfileMenuItem {
+    border:none;
+    color: #FFF;
+    padding: 10px 15px 10px 8px;
+    background: #008C8D;
+    display: block;
+    cursor:pointer;
+    direction:rtl;
+    /*font-family:'B Yekan', 'B Nazanin', 'B Nasim', Custom, Tahoma;*/
+}
+
+.UserProfileMenuItem:hover {
+    background-color: #58BAE9;
+    transition: all 0.5s;
+}
+
+.textbox
+{
+    font-family:Tahoma;
+    font-size:8.5pt;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:5px;
+    padding-right:5px;
+    width:150px;
+}
+.align {
+    text-align: right;
+    margin-right: 1px;
+}
+
+.blueButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #0066FF;
+    font-family: Tahoma;
+    font-size: 8pt;
+    /*font-weight: bold;*/
+    color:white;
+    border:none;
+}
+
+.blueButton:hover {
+    background-color: #84B5FF;
+}
+
+.greenButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #009933;
+    font-family: Tahoma;
+    font-size: 8pt;
+    /*font-weight: bold;*/
+    color:white;
+    border:none;
+}
+
+.greenButton:hover {
+    background-color: #97E697;
+    color: #FFFFFF;
+}
+
+.orangeButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: #ff6a00;
+    font-family: Tahoma;
+    font-size: 8pt;
+    /*font-weight: bold;*/
+    color:white;
+    border:none;
+}
+
+.orangeButton:hover {
+    background-color: #fac479;
+    color: #FFFFFF;
+}
+
+.gridHeader {
+    /*background-color: #186AE4;*/
+    background-color: #008C8D;
+}
+
+.gridHeader a{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+/*----------------------------------------------------------*/
+/*----------------- AJAX Control Toolkit -------------------*/
+/*----------------------------------------------------------*/
+
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.modalPopup {
+	background-color:#fff;
+	border-width:1px;
+	border-style:solid;
+	border-color:Gray;
+}
+
+.modalPopup p {
+    padding: 3px;
+}
+
+.modalPopupHeader
+{
+    /*cursor: move;*/ 
+    background-color: #22a7f3; 
+    color: white; 
+    padding:5px;
+}
+
+
+.dashboardMenuItem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    padding-right:5px;
+    font-family: Tahoma;
+    font-size: 8pt;
+    color:black;
+    border:none;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.dashboardMenuItem:hover {
+    color: #d45d07;
+}
+
+.linkItem {
+    /*padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    padding-right:5px;*/
+    font-family: Tahoma;
+    font-size: 8pt;
+    color:#0d66a7;
+    border:none;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.linkItem:hover {
+    color: #d45d07;
+}
+
+.dashboardMenuItemBullet{
+    padding-right:5px;
+}
+
+.menuAccordionHeader
+{
+    background-color: #edeaea; 
+    text-align: right; 
+    direction: rtl;
+}
+
+.menuAccordionContentTable
+{
+    border-collapse: collapse; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    display: inline-block;
+}
+
+.accordionHeader{
+    margin-top:2px;
+}
+
+.accordionContent
+{
+    direction:rtl;
+    text-align:right;
+}
+
+/*-------------------------------*/
+
+.adminLognBg
+{
+    width:100%;
+    height:100;
+    background-color:#0d66a7;
+}
+
+.rightToLeftText
+{
+    direction:rtl;
+}
+
+.writingBox
+{
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-right:5px;
+    padding-left:5px;
+    font-family:Tahoma;
+    font-size:8.5pt;
+}
+
+.ListSearchExtenderPrompt
+{
+	font-style:italic;
+	color:Gray;
+	background-color:#d45d07;
+    color:#b6ff00;
+    padding:3px;
+}
+
+
+.ddlStyle
+{
+    font-family: Tahoma;
+    font-size: 8.5pt;
+    padding: 5px;
+}
+
+.cpHeader {
+    color: white;
+    background-color: #719DDB;
+    /*font: bold 11px auto "Trebuchet MS", Verdana;*/
+    font-size: 12px;
+    cursor: pointer;
+    width: 450px;
+    height: 18px;
+    padding: 4px;
+}
+
+.cpBody {
+    background-color: #DCE4F9;
+    /*font: normal 11px auto Verdana, Arial;*/
+    border: 1px gray;
+    width: 450px;
+    padding: 4px;
+    padding-top: 7px;
+}

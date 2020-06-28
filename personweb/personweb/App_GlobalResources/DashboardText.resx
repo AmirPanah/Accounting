@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActiveAccount" xml:space="preserve">
+    <value>فعال بودن حساب کاربری</value>
+  </data>
+  <data name="AdminID" xml:space="preserve">
+    <value>شناسه حساب</value>
+  </data>
+  <data name="AskToDelete" xml:space="preserve">
+    <value>آیا برای حذف رکورد(های) انتخابی اطمینان دارید؟</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>توضیحات</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>سامانه مدیریت  پرسنلی</value>
+  </data>
+  <data name="Controlpanel" xml:space="preserve">
+    <value>پانل مدیریتی</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>تمامی حقوق برای آی تی بنیاد محفوظ است</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>مدیریت ایمیل ها</value>
+  </data>
+  <data name="errAddFailed" xml:space="preserve">
+    <value>امکان ثبت اطلاعات وجود ندارد</value>
+  </data>
+  <data name="errAddFailedFileUploadempty" xml:space="preserve">
+    <value>فایل مورد نظر را انتخاب کنید</value>
+  </data>
+  <data name="errAddFailedFileUploadformat" xml:space="preserve">
+    <value>امکان ثبت فرمت عکس انتخابی وجود ندارد</value>
+  </data>
+  <data name="errAddFailedFileUploadrepeat" xml:space="preserve">
+    <value> عنوان فایل خود را تغییر دهید</value>
+  </data>
+  <data name="errAddFailedFileUploadsize" xml:space="preserve">
+    <value>حجم فایل انتخابی بیشتر از سایز مجاز است</value>
+  </data>
+  <data name="errAddFailedSoftName" xml:space="preserve">
+    <value>عنوان نرم افزار تکراری است</value>
+  </data>
+  <data name="errDeleteFailed" xml:space="preserve">
+    <value>امکان حذف اطلاعات وجود ندارد</value>
+  </data>
+  <data name="errDuplicateEmail" xml:space="preserve">
+    <value>ایمیل موردنظر قبلا ثبت شده است</value>
+  </data>
+  <data name="errDuplicateProposedUsername" xml:space="preserve">
+    <value>نام کاربری پیشنهادی قبلا ثبت شده است</value>
+  </data>
+  <data name="errDuplicateUsername" xml:space="preserve">
+    <value>نام کاربری مورد نظر قبلا ثبت شده است</value>
+  </data>
+  <data name="errOperationFailed" xml:space="preserve">
+    <value>امکان انجام عملیات وجود ندارد!</value>
+  </data>
+  <data name="errorpage" xml:space="preserve">
+    <value>صفحه مورد نظر در دسترس نمی باشد</value>
+  </data>
+  <data name="errRepeatGroupTitle" xml:space="preserve">
+    <value>عنوان گروه انتخابی تکراری می باشد</value>
+  </data>
+  <data name="errUpdateFailed" xml:space="preserve">
+    <value>امکان ویرایش اطلاعات وجود ندارد</value>
+  </data>
+  <data name="fds" xml:space="preserve">
+    <value>fdg</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>فایل</value>
+  </data>
+  <data name="FileSize" xml:space="preserve">
+    <value>حجم نرم افزار</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="FacultyID" xml:space="preserve">
+    <value>کد دانشکده</value>
+  </data>
+  <data name="FacuktyTitle" xml:space="preserve">
+    <value>عنوان دانشکده</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="InsertAccount" xml:space="preserve">
+    <value>افزودن اکانت جدید</value>
+  </data>
+  <data name="InsertFaculty" xml:space="preserve">
+    <value>افزودن دانشکده</value>
+  </data>
+  <data name="InsertLink" xml:space="preserve">
+    <value>افزودن لینک</value>
+  </data>
+  <data name="InsertSoftware" xml:space="preserve">
+    <value>افزودن نرم افزار جدید</value>
+  </data>
+  <data name="InsertSoftwareLink" xml:space="preserve">
+    <value>افزودن لینک</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="Menuadmins" xml:space="preserve">
+    <value>مدیریت سامانه</value>
+  </data>
+  <data name="Menugroups" xml:space="preserve">
+    <value>گروههای نرم افزاری</value>
+  </data>
+  <data name="Menulinks" xml:space="preserve">
+    <value>مدیریت لینک ها</value>
+  </data>
+  <data name="Menusoftwares" xml:space="preserve">
+    <value>مدیریت نرم افزار</value>
+  </data>
+  <data name="MgrAccounts" xml:space="preserve">
+    <value>مدیریت حسا ب های کاربردی</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>شماره تلفن همراه</value>
+  </data>
+  <data name="msgAddSuccessfull" xml:space="preserve">
+    <value>ثبت اطلاعات با موفقیت انجام شد</value>
+  </data>
+  <data name="msgDeleteSuccessfull" xml:space="preserve">
+    <value>حذف اطلاعات با موفقیت انجام شد</value>
+  </data>
+  <data name="msgUpdateSuccessfull" xml:space="preserve">
+    <value>ویرایش اطلاعات با موفقیت انجام شد</value>
+  </data>
+  <data name="NewSoftInsert" xml:space="preserve">
+    <value>ثبت نرم افزار جدید</value>
+  </data>
+  <data name="NewUserName" xml:space="preserve">
+    <value>نام کاربری پیشنهادی</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>رمز عبور</value>
+  </data>
+  <data name="PasswordConfirm" xml:space="preserve">
+    <value>تایید رمز عبور</value>
+  </data>
+  <data name="RecordCount" xml:space="preserve">
+    <value>رکورد در این بخش ثبت شده است</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="RegTime" xml:space="preserve">
+    <value>زمان ثبت</value>
+  </data>
+  <data name="SelectRecordCount" xml:space="preserve">
+    <value>رکورد از این بخش انتخاب شده است</value>
+  </data>
+  <data name="SoftwareID" xml:space="preserve">
+    <value>کد نرم افزار</value>
+  </data>
+  <data name="SoftwareImage" xml:space="preserve">
+    <value>تصویرنرم افزار</value>
+  </data>
+  <data name="SoftwareName" xml:space="preserve">
+    <value>عنوان نرم افزار</value>
+  </data>
+  <data name="UpdateGroup" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>ورژن</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>مشاهده</value>
+  </data>
+  <data name="errSearch" xml:space="preserve">
+    <value> رکوردی وجود ندارد</value>
+  </data>
+  <data name="EnterCaptcha" xml:space="preserve">
+    <value>متن موجود در تصویر فوق را وارد کنید :</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="LoginToSystem" xml:space="preserve">
+    <value>ورود به سامانه</value>
+  </data>
+  <data name="errAccountIsLocked" xml:space="preserve">
+    <value>حساب کاربری مورد نظر مسدود است!</value>
+  </data>
+  <data name="errInvalidUserPass" xml:space="preserve">
+    <value>نام کاربری یا رمز عبور معتبر نمی باشد!</value>
+  </data>
+  <data name="IncorrectCaptcha" xml:space="preserve">
+    <value>متن وارد شده صحیح نیست. دوباره تلاش کنید!</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="WelcomeDearUser" xml:space="preserve">
+    <value>عزیز ، خوش آمدید</value>
+  </data>
+  <data name="UserHyperLink" xml:space="preserve">
+    <value>ادامه</value>
+  </data>
+  <data name="LinkRecordCount" xml:space="preserve">
+    <value>لینک  برای این نرم افزار ثبت شده است</value>
+  </data>
+  <data name="programcount" xml:space="preserve">
+    <value>تعداد نرم افزارهای موجود در پرتال</value>
+  </data>
+  <data name="portalvisited" xml:space="preserve">
+    <value>تعداد بازدید کنندگان </value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>جستجو</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>واحدهای اداری معاونت</value>
+  </data>
+  <data name="EduFields" xml:space="preserve">
+    <value>رشته های تحصیلی</value>
+  </data>
+  <data name="EduLevels" xml:space="preserve">
+    <value>مقاطع تحصیلی</value>
+  </data>
+  <data name="EduTendencies" xml:space="preserve">
+    <value>گرایش ها</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>کارکنان</value>
+  </data>
+  <data name="Faculties" xml:space="preserve">
+    <value>دانشکده ها</value>
+  </data>
+  <data name="Lecturers" xml:space="preserve">
+    <value>اساتید</value>
+  </data>
+  <data name="PersonAdmins" xml:space="preserve">
+    <value>مدیران سامانه پرسنلی</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>سمت ها</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>دانشجویان</value>
+  </data>
+  <data name="FacultyName" xml:space="preserve">
+    <value>نام دانشکده</value>
+  </data>
+  <data name="InsertEduLevel" xml:space="preserve">
+    <value>افزودن مقطع</value>
+  </data>
+  <data name="LevelName" xml:space="preserve">
+    <value>نام مقطع تحصیلی</value>
+  </data>
+  <data name="DepartmentID" xml:space="preserve">
+    <value>کد واحد اداری</value>
+  </data>
+  <data name="DepartmentName" xml:space="preserve">
+    <value>نام واحد اداری</value>
+  </data>
+  <data name="FieldID" xml:space="preserve">
+    <value>کد رشته</value>
+  </data>
+  <data name="FieldName" xml:space="preserve">
+    <value>نام رشته</value>
+  </data>
+  <data name="InserField" xml:space="preserve">
+    <value>افزودن رشته</value>
+  </data>
+  <data name="LevelID" xml:space="preserve">
+    <value>کدمقطع</value>
+  </data>
+  <data name="RoleID" xml:space="preserve">
+    <value>کد سمت</value>
+  </data>
+  <data name="RoleName" xml:space="preserve">
+    <value>نام سمت</value>
+  </data>
+  <data name="Tendencies" xml:space="preserve">
+    <value>گرایش ها</value>
+  </data>
+  <data name="TendencyID" xml:space="preserve">
+    <value>کد گرایش</value>
+  </data>
+  <data name="TendencyName" xml:space="preserve">
+    <value>نام گرایش</value>
+  </data>
+  <data name="InsertDepartment" xml:space="preserve">
+    <value>افزودن واحد</value>
+  </data>
+  <data name="InsertRole" xml:space="preserve">
+    <value>افزودن سمت</value>
+  </data>
+  <data name="InsertTendency" xml:space="preserve">
+    <value>افزودن گرایش</value>
+  </data>
+  <data name="EmailTypeID" xml:space="preserve">
+    <value>کد نوع ایمیل</value>
+  </data>
+  <data name="EmailTypeName" xml:space="preserve">
+    <value>نام نوع ایمیل</value>
+  </data>
+  <data name="InsertEmailType" xml:space="preserve">
+    <value>افزودن نوع ایمیل</value>
+  </data>
+  <data name="InsertTelType" xml:space="preserve">
+    <value>افزودن نوع تماس</value>
+  </data>
+  <data name="TelTypeID" xml:space="preserve">
+    <value>کد نوع تماس</value>
+  </data>
+  <data name="TelTypeName" xml:space="preserve">
+    <value>نام نوع تماس</value>
+  </data>
+  <data name="EmailType" xml:space="preserve">
+    <value>نوع ایمیل</value>
+  </data>
+  <data name="TelType" xml:space="preserve">
+    <value>مدیریت نوع تماس</value>
+  </data>
+  <data name="EmailAddrress" xml:space="preserve">
+    <value>آدرس ایمیل</value>
+  </data>
+  <data name="EmailContact" xml:space="preserve">
+    <value>آدرس ایمیل</value>
+  </data>
+  <data name="EmailcontactID" xml:space="preserve">
+    <value>شماره ایمیل</value>
+  </data>
+  <data name="InsertEmailContact" xml:space="preserve">
+    <value>افزودن ایمیل</value>
+  </data>
+  <data name="UserID" xml:space="preserve">
+    <value>کد کاربر</value>
+  </data>
+  <data name="UserTypeID" xml:space="preserve">
+    <value>کد نوع کاربر</value>
+  </data>
+  <data name="Tel" xml:space="preserve">
+    <value>مدیریت تماس ها</value>
+  </data>
+  <data name="EmailID" xml:space="preserve">
+    <value>کد ایمیل</value>
+  </data>
+  <data name="TelNumber" xml:space="preserve">
+    <value>شماره تماس</value>
+  </data>
+  <data name="InsertTelContact" xml:space="preserve">
+    <value>افزودن تماس</value>
+  </data>
+  <data name="TelID" xml:space="preserve">
+    <value>شماره تماس</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>جنسیت</value>
+  </data>
+  <data name="ImageFile" xml:space="preserve">
+    <value>فایل تصویر</value>
+  </data>
+  <data name="NationalCode" xml:space="preserve">
+    <value>کد ملی</value>
+  </data>
+  <data name="StudentCode" xml:space="preserve">
+    <value>شماره دانشجویی</value>
+  </data>
+  <data name="StudentID" xml:space="preserve">
+    <value>کد دانشجو</value>
+  </data>
+  <data name="InsertStudent" xml:space="preserve">
+    <value>افزودن دانشجو</value>
+  </data>
+  <data name="EntryTerm" xml:space="preserve">
+    <value>ترم ورود</value>
+  </data>
+  <data name="FacultyTitle" xml:space="preserve">
+    <value>نام دانشکده</value>
+  </data>
+  <data name="FieldTitle" xml:space="preserve">
+    <value>رشته تحصیلی</value>
+  </data>
+  <data name="LevelTitle" xml:space="preserve">
+    <value>مقطع تحصیلی</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>وضعیت</value>
+  </data>
+  <data name="TendencyTitle" xml:space="preserve">
+    <value>گرایش</value>
+  </data>
+  <data name="InsertLecturer" xml:space="preserve">
+    <value>افزودن استاد</value>
+  </data>
+  <data name="InsertEmployee" xml:space="preserve">
+    <value>افزودن کارمند</value>
+  </data>
+  <data name="AdminI" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InsertAdmin" xml:space="preserve">
+    <value>افزودن مدیر</value>
+  </data>
+  <data name="errRepeatemailTitle" xml:space="preserve">
+    <value>ایمیل انتخابی تکراری می باشد </value>
+  </data>
+  <data name="errRepeatetelTitle" xml:space="preserve">
+    <value>شماره انتخابی تکراری می باشد</value>
+  </data>
+  <data name="errRepeatTitle" xml:space="preserve">
+    <value>عنوان انتخابی تکراری می باشد</value>
+  </data>
+  <data name="errRepeatuserTitle" xml:space="preserve">
+    <value>نام کاربری انتخابی تکراری می باشد</value>
+  </data>
+  <data name="PassRepeat" xml:space="preserve">
+    <value>تایید رمز عبور</value>
+  </data>
+  <data name="errNoPasswordsAreNotMatch" xml:space="preserve">
+    <value>پسورد ها را درست وارد کنید </value>
+  </data>
+  <data name="WebServiceAccount" xml:space="preserve">
+    <value>اکانت وب سرویس</value>
+  </data>
+  <data name="ForgetPassword" xml:space="preserve">
+    <value>رمز عبور خود را فراموش کرده ام</value>
+  </data>
+  <data name="DepartmentManagment" xml:space="preserve">
+    <value>مدیریت واحدهای اداری</value>
+  </data>
+  <data name="EduFieldManagment" xml:space="preserve">
+    <value>مدیریت رشته های تحصیلی</value>
+  </data>
+  <data name="EduLevelManagment" xml:space="preserve">
+    <value>مدیریت مقاطع تحصیلی</value>
+  </data>
+  <data name="EduTendencyManagment" xml:space="preserve">
+    <value>مدیریت گرایش ها</value>
+  </data>
+  <data name="EmailPerson" xml:space="preserve">
+    <value>مدیریت ایمیل اشخاص</value>
+  </data>
+  <data name="EmailTypeManagment" xml:space="preserve">
+    <value>مدیریت نوع ایمیل</value>
+  </data>
+  <data name="FacultyManagment" xml:space="preserve">
+    <value>مدیریت دانشکده</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>اشخاص</value>
+  </data>
+  <data name="RoleManagment" xml:space="preserve">
+    <value>مدیریت سمت ها</value>
+  </data>
+  <data name="TelPerson" xml:space="preserve">
+    <value>مدیریت تماس اشخاص</value>
+  </data>
+  <data name="UserProfileMenuItem" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebServiceAccountManagment" xml:space="preserve">
+    <value>مدیریت اکانت وب سرویس</value>
+  </data>
+  <data name="AddDepartment" xml:space="preserve">
+    <value>افزودن واحد اداری معاونت</value>
+  </data>
+  <data name="AddEduField" xml:space="preserve">
+    <value>افزودن رشته های تحصیلی</value>
+  </data>
+  <data name="AddEduLevel" xml:space="preserve">
+    <value>افزودن سطح تحصیلی</value>
+  </data>
+  <data name="AddEduTendency" xml:space="preserve">
+    <value>افزودن گرایش</value>
+  </data>
+  <data name="AddEmail" xml:space="preserve">
+    <value>افزودن ایمیل</value>
+  </data>
+  <data name="AddEmailContact" xml:space="preserve">
+    <value>افزودن ایمیل اشخاص</value>
+  </data>
+  <data name="AddEmailType" xml:space="preserve">
+    <value>افزودن نوع ایمیل</value>
+  </data>
+  <data name="AddEmploye" xml:space="preserve">
+    <value>افزودن کارمند</value>
+  </data>
+  <data name="AddFaculty" xml:space="preserve">
+    <value>افزودن دانشکده</value>
+  </data>
+  <data name="AddLecture" xml:space="preserve">
+    <value>افزودن استاد</value>
+  </data>
+  <data name="AddPersonAdmin" xml:space="preserve">
+    <value>افزودن مدیران سامانه</value>
+  </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>افزودن سمت</value>
+  </data>
+  <data name="AddStudent" xml:space="preserve">
+    <value>افزودن دانشجو</value>
+  </data>
+  <data name="AddTel" xml:space="preserve">
+    <value>افزودن شماره تماس</value>
+  </data>
+  <data name="AddTelType" xml:space="preserve">
+    <value>افزودن نوع شماره تماس</value>
+  </data>
+  <data name="AddWebService" xml:space="preserve">
+    <value>افزودن اکانت وب سرویس</value>
+  </data>
+  <data name="EditDepartment" xml:space="preserve">
+    <value>ویرایش واحد اداری معاونت</value>
+  </data>
+  <data name="EditEduField" xml:space="preserve">
+    <value>ویرایش رشته های تحصیلی</value>
+  </data>
+  <data name="EditEduLevel" xml:space="preserve">
+    <value>ویرایش سطح تحصیلی</value>
+  </data>
+  <data name="EditEduTendency" xml:space="preserve">
+    <value>ویرایش گرایش</value>
+  </data>
+  <data name="editEmail" xml:space="preserve">
+    <value>ویرایش ایمیل</value>
+  </data>
+  <data name="EditEmailContact" xml:space="preserve">
+    <value>ویرایش ایمیل اشخاص</value>
+  </data>
+  <data name="EditEmailType" xml:space="preserve">
+    <value>ویرایش نوع ایمیل</value>
+  </data>
+  <data name="EditEmploye" xml:space="preserve">
+    <value>ویرایش کارمند</value>
+  </data>
+  <data name="EditFaculty" xml:space="preserve">
+    <value>ویرایش دانشکده</value>
+  </data>
+  <data name="EditLecture" xml:space="preserve">
+    <value>ویرایش استاد</value>
+  </data>
+  <data name="EditPersonAdmin" xml:space="preserve">
+    <value>ویرایش اکانت مدیران سامانه</value>
+  </data>
+  <data name="EditRole" xml:space="preserve">
+    <value>ویرایش سمت</value>
+  </data>
+  <data name="EditStudent" xml:space="preserve">
+    <value>ویرایش دانشجو</value>
+  </data>
+  <data name="EditTel" xml:space="preserve">
+    <value>ویرایش شماره تماس</value>
+  </data>
+  <data name="EditTelType" xml:space="preserve">
+    <value>ویرایش نوع شماره تماس</value>
+  </data>
+  <data name="EditWebService" xml:space="preserve">
+    <value>ویرایش اکانت وب سرویس</value>
+  </data>
+  <data name="ManageDepartment" xml:space="preserve">
+    <value>مدیریت واحد اداری معاونت</value>
+  </data>
+  <data name="ManageEduField" xml:space="preserve">
+    <value>مدیریت رشته های تحصیلی</value>
+  </data>
+  <data name="ManageEduLevel" xml:space="preserve">
+    <value>مدیریت سطح تحصیلی</value>
+  </data>
+  <data name="ManageEduTendency" xml:space="preserve">
+    <value>مدیریت گرایش</value>
+  </data>
+  <data name="ManageEmail" xml:space="preserve">
+    <value>مدیرت ایمیل</value>
+  </data>
+  <data name="ManageEmailContact" xml:space="preserve">
+    <value>مدیریت ایمیل اشخاص</value>
+  </data>
+  <data name="ManageEmailType" xml:space="preserve">
+    <value>مدیریت نوع ایمیل</value>
+  </data>
+  <data name="ManageEmploye" xml:space="preserve">
+    <value>مدیریت کارمند</value>
+  </data>
+  <data name="ManageFaculty" xml:space="preserve">
+    <value>مدیریت دانشکده</value>
+  </data>
+  <data name="ManageLecture" xml:space="preserve">
+    <value>مدیریت استاد</value>
+  </data>
+  <data name="ManagePersonAdmin" xml:space="preserve">
+    <value>مدیریت اکانت مدیران سامانه</value>
+  </data>
+  <data name="ManageRole" xml:space="preserve">
+    <value>مدیریت سمت</value>
+  </data>
+  <data name="ManageStudent" xml:space="preserve">
+    <value>مدیریت دانشجویان</value>
+  </data>
+  <data name="ManageTel" xml:space="preserve">
+    <value>مدیریت شماره تماس</value>
+  </data>
+  <data name="ManageTelType" xml:space="preserve">
+    <value>مدیریت نوع شماره تماس</value>
+  </data>
+  <data name="ManageWebService" xml:space="preserve">
+    <value>مدیریت اکانت وب سرویس</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="ManageTelContact" xml:space="preserve">
+    <value>مدیریت تماس اشخاص</value>
+  </data>
+  <data name="AddField" xml:space="preserve">
+    <value>افزودن رشته</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="InsertEduField" xml:space="preserve">
+    <value>افزودن  رشته تحصیلی</value>
+  </data>
+  <data name="dsfsd" xml:space="preserve">
+    <value>dsfs</value>
+  </data>
+  <data name="InsertEduTendency" xml:space="preserve">
+    <value>افزودن گرایش تحصیلی</value>
+  </data>
+  <data name="pe" xml:space="preserve">
+    <value>l</value>
+  </data>
+  <data name="InsertAcount" xml:space="preserve">
+    <value>افزودن اکانت</value>
+  </data>
+  <data name="InsertTel" xml:space="preserve">
+    <value>افزودن شماره تماس</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>گزارشگیری</value>
+  </data>
+  <data name="AddVPN" xml:space="preserve">
+    <value>افزودن vpn</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>توضیحات</value>
+  </data>
+  <data name="VPNManagment" xml:space="preserve">
+    <value>مدیریت vpn</value>
+  </data>
+  <data name="VPNID" xml:space="preserve">
+    <value>کدVPN</value>
+  </data>
+  <data name="VPNUpdate" xml:space="preserve">
+    <value>ویرایش VPN</value>
+  </data>
+  <data name="vpn" xml:space="preserve">
+    <value>مدیریت vpn</value>
+  </data>
+  <data name="DepartmentTitle" xml:space="preserve">
+    <value>نام واحد اداری</value>
+  </data>
+</root>
